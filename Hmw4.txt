@@ -1,0 +1,10 @@
+
+Feature: User should be able to register on the website.so user can avail the facility
+
+Scenario:user should be able to register to successfully
+Given user details on login page
+When user click on register page
+And fill all the compulsory field
+And click on submit button
+Then user should be register successfully
+And see message registeration completed successfully

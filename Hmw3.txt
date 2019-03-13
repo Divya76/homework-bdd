@@ -1,0 +1,73 @@
+Feature: User should be able to log in on B_mail 
+Scenario1:user should be logged in with valid credential
+Given user details on login page
+When user enter valid credential
+And enter valid user name "Petersmith"
+And enter valid password "PS112"
+And click on sign in button
+Then user should be able to log in successfully
+And see welcome page
+
+Scenario 2:user should not be able to log in with invalid credential
+Given user details on home page
+When user enter invalid credential
+And enter invalid username "ABC"
+And enter invalid password "124"
+And click on sign button
+Then user should not be able to log in successfully
+And error message is displayed
+
+Scenario 3:user should not be able to log in with invalid credential
+Given user details on home page
+When user enter invalid credential
+And enter valid username "AAB"
+And enter invalid password "124"
+And click on sign button
+Then user should not be able to log in successfully
+And error message is displayed
+
+
+Scenario 4:user should not be able to log in with invalid credential
+Given user details on home page
+When user enter invalid credential
+And enter invalid username "AAA"
+And enter valid password "1224"
+And click on sign button
+Then user should not be able to log in successfully
+And error message is displayed
+
+
+Scenario 5:user should not be able to log in with invalid credential
+Given user details on home page
+When user enter invalid credential
+And enter username " "
+And enter valid password "124"
+And click on sign button
+Then user should not be able to log in successfully
+And error message is displayed
+
+
+Scenario 6:user should not be able to log in with invalid credential
+Given userdetails on home page
+When user enter invalid credential
+And enter valid username "AAB"
+And enter invalid password " "
+And click on sign button
+Then user should not be able to log in successfully
+And error message is displayed
+
+
+Scenario 7:user should not be able to log in with invalid credential
+Given user details on home page
+When user enter invalid credential
+And enter invalid username " "
+And enter invalid password " "
+And click on sign button
+Then user should not be able to log in successfully
+And error message is displayed
+
+
+
+
+
+
